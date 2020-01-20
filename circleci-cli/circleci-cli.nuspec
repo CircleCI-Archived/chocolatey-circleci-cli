@@ -20,6 +20,7 @@
     <projectSourceUrl>https://github.com/CircleCI-Public/circleci-cli</projectSourceUrl>
     <docsUrl>https://circleci-public.github.io/circleci-cli/</docsUrl>
     <tags>ci</tags>
+    <releaseNotes>https://github.com/CircleCI-Public/circleci-cli/releases</releaseNotes>
     <summary>CircleCI command line tool</summary>
     <description>
     Command line tool for performing tasks related to a CircleCI project. Enables you to run local builds, debug your continuous integration config files, and manage Orbs.
