@@ -16,3 +16,5 @@ jobs:
       - run: Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
       - run: Remove-Item -Force -Recurse .git\
       - run: choco pack circleci-cli\circleci-cli.nuspec
+      - store_artifacts:
+          path: circleci-cli.*.nupkg
