@@ -11,7 +11,7 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>cicleci-cli (Install)</title>
+    <title>circleci-cli (Install)</title>
     <authors>circleCI</authors>
     <projectUrl>https://circleci.com/docs/2.0/local-cli/</projectUrl>
     <iconUrl>https://pbs.twimg.com/profile_images/1145744052991561728/O6nf6n_u_400x400.png</iconUrl>
