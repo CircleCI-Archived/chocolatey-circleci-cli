@@ -20,4 +20,4 @@ jobs:
       - run: copy-item circleci-cli.*.nupkg circleci-cli.nupkg
       - store_artifacts:
           path: circleci-cli.nupkg
-      #- run: choco push circleci-cli.nupkg --source https://chocolatey.org/ --apikey $env:apikey 
+      - run: choco push circleci-cli.nupkg --source https://chocolatey.org/ --apikey $env:apikey 
