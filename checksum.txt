@@ -1,0 +1,3 @@
+45724bbb58c33703c778b6fc14ecf94bf410dd0dd5efaac2300dc4cad49e060d  circleci-cli_0.1.7523_linux_amd64.tar.gz
+bf0881f61b7fb05f3ce124a8dc910cdd216b44909aab37860f77c32b9ff9254f  circleci-cli_0.1.7523_windows_amd64.zip
+bdf2cbd6580f40a262082b06436b1006ed6f25c32aa22ef24893b0e110aa13bc  circleci-cli_0.1.7523_darwin_amd64.tar.gz
