@@ -41,6 +41,7 @@ jobs:
 
 workflows:
   build:
+    unless: << pipeline.parameters.deploy-production >>
     jobs:
       - build-package
   build-and-deploy:
