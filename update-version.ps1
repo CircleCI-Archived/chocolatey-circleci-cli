@@ -1,4 +1,3 @@
-
 $url = "https://github.com/CircleCI-Public/circleci-cli/releases/latest" 
 
 $request = [System.Net.WebRequest]::Create($url)
@@ -10,7 +9,7 @@ $curVersion = ($versionURL | Split-Path -Leaf).Substring(1)
 
 $tmpFile = ".\out.txt"
 $checksumURL = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v$curVersion/circleci-cli_$($curVersion)_checksums.txt"
-Write-Verbose "getting checksome from $checksumURL to $tmpFile"
+Write-Verbose "getting checksum from $checksumURL to $tmpFile"
 
 (New-Object System.Net.WebClient).DownloadString($checksumURL) >> $tmpFile
 
@@ -24,3 +23,9 @@ $downloadURL = "https://github.com/CircleCI-Public/circleci-cli/releases/downloa
 
 $nuspecPath = "./circleci-cli/circleci-cli.nuspec"
 (Get-Content $nuspecPath).Replace('$VER',$curVersion) | Out-File $nuspecPath -Force
+
+# Tag release to be pushed later.
+git config --global user.email "community-partner@circleci.com"
+git config --global user.name "cpe-bot"
+git add -u
+git tag -a $curVersion -m "Publish $curVersion"
