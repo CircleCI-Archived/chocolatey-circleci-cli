@@ -15,7 +15,7 @@
     <authors>CircleCI</authors>
     <projectUrl>https://circleci.com/docs/2.0/local-cli/</projectUrl>
     <iconUrl>https://github.com/CircleCI-Public/chocolatey-circleci-cli/raw/master/icons/circleci-128x.png</iconUrl>
-    <icon>icon\circleci-128x.png</icon>
+    <icon>icons\circleci-128x.png</icon>
     <licenseUrl>https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/CircleCI-Public/circleci-cli</projectSourceUrl>
@@ -29,6 +29,6 @@
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="icons\circleci-128x.png" target="icon\" />
+    <file src="icons\**" target="icons\" />
   </files>
 </package>

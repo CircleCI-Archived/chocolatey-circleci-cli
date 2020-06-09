@@ -25,5 +25,7 @@ $nuspecPath = "./circleci-cli/circleci-cli.nuspec"
 (Get-Content $nuspecPath).Replace('$VER',$curVersion) | Out-File $nuspecPath -Force
 
 # Tag release to be pushed later.
+git config --global user.email "community-partner@circleci.com"
+git config --global user.name "cpe-bot"
 git add -u
 git tag -a $curVersion -m "Publish $curVersion"
