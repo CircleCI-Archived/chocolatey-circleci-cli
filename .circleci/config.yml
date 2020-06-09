@@ -44,8 +44,8 @@ workflows:
     jobs:
       - build-package
   build-and-deploy:
+    when: << pipeline.parameters.deploy-production >>
     jobs:
       - build-package:
-          when: << pipeline.parameters.deploy-production >>
           context: chocolatey
           deploy: true
