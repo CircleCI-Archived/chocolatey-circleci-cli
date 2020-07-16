@@ -9,7 +9,7 @@ $curVersion = ($versionURL | Split-Path -Leaf).Substring(1)
 
 $tmpFile = ".\out.txt"
 $checksumURL = "https://github.com/CircleCI-Public/circleci-cli/releases/download/v$curVersion/circleci-cli_$($curVersion)_checksums.txt"
-Write-Verbose "getting checksome from $checksumURL to $tmpFile"
+Write-Verbose "getting checksum from $checksumURL to $tmpFile"
 
 (New-Object System.Net.WebClient).DownloadString($checksumURL) >> $tmpFile
 
