@@ -28,4 +28,5 @@ $nuspecPath = "./circleci-cli/circleci-cli.nuspec"
 git config --global user.email "community-partner@circleci.com"
 git config --global user.name "cpe-bot"
 git add -u
+git commit -m "Publish $curVersion"
 git tag -a $curVersion -m "Publish $curVersion"
