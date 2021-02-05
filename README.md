@@ -1,3 +1,5 @@
+_[This repository has been moved to the main CLI repository][cli repo]_
+
 # CircleCI CLI Chocolatey Package
 
 Automatically builds and deploys the Chocolatey package when the [main CLI repository][cli repo]
