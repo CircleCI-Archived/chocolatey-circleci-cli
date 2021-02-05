@@ -1,3 +1,5 @@
+_[This repository has been moved to the main CLI repository][cli repo]_
+
 # CircleCI CLI Chocolatey Package
 
 Automatically builds and deploys the Chocolatey package when the [main CLI repository][cli repo]
@@ -11,6 +13,6 @@ Chocolatey page: https://chocolatey.org/packages/circleci-cli
 choco install circleci-cli -y
 ```
 
-[cli repo]: github.com/circleci-public/circleci-cli
+[cli repo]: https://github.com/circleci-public/circleci-cli
 
 _thanks to @ericjaystevens for the initial work on this!_
